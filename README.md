@@ -1,2 +1,0 @@
-# eatify
-Eatify Website
