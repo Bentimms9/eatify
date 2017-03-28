@@ -12,7 +12,7 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
-  border-color: #F05F40;
+  border-color: #39b54a;
   border-width: 3px;
   max-width: 50px;
 }
@@ -261,7 +261,7 @@ header .header-content .header-content-inner p {
   font-size: 14px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-size: 18px;
+  font-size: 30px;
 }
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
@@ -415,34 +415,84 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 .boxed {
-  border-radius: 10px;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.7);
+  max-width: 800px;
+  margin: auto;
+  height: 400px;
+  margin-top: 30px;
+  }
+.headingtext {
+margin-top: -15px;
+margin-bottom: 80px;
+font-weight: bold;
+font-size: 25px;
 }
+/*! Zip Code Entry Box */
 .subscribe {
 	width : 40% !important ;
 	margin : 0 auto !important ;
 }
 .email_input {
-	padding : 10px;
-	border : #ddd solid 1px;
+	padding : 15px;
+	border : #ddd solid 2px;
+  border-radius: 5px;
 	background : none;
-	width : 100%;
-	margin : 10px 0;
-	font-weight : bold;
+  color: white;
 }
 .email_submit {
-	border : #ddd solid 1px;
+	border : #ddd solid 2px;
 	border-radius : 5px;
-	padding : 10px 20px;
+	padding : 15px 22px;
 	background : none;
 }
 .email_submit:hover {
 	opacity: 0.9;
-  background-color: darkgreen
-}
-.email_margin_top {
-	margin-top : 60px;
-}
+  background-color: #39b54a;
+  }
 .downarrow {
  font-size: 50px;
+}
+.headerimage {
+display: block;
+margin: auto;
+width:40%
+}
+#services {
+background-color: #F05F40;
+}
+.section-heading {
+color: white;
+}
+.section2title {
+color: white;
+}
+.text-muted{
+color: rgba(255, 255, 255, 0.7);
+}
+#plateicon {
+max-height: 100px;
+max-width: 100px;
+margin: auto;
+}
+#grocerycarticon {
+max-height: 125px;
+max-width: 125px;
+margin: auto;
+}
+#Door {
+max-height: 125px;
+max-width: 125px;
+margin: auto;
+}
+.navbar-brand {
+border: 1px solid;
+border-radius: 5px;
+border-color: white;
+padding-left: 40px;
+}
+#cheficon {
+max-height:200px;
+max-width: 20px;
+position: absolute;
+margin-left: -25px;
 }
