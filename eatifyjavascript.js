@@ -45,6 +45,14 @@
         distance: '0px'
     }, 300);
 
+    $( ".btn btn-default btn-xl sr-button" )
+ .on("mouseenter", function() {
+  $("button").show();
+})
+.on("mouseleave", function() {
+  $("button").hide();
+});
+
     // Initialize and Configure Magnific Popup Lightbox Plugin
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
