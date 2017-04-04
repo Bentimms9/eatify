@@ -63,6 +63,7 @@ aside {
 }
 .navbar-default {
   background-color: white;
+  border: none;
   border-color: rgba(34, 34, 34, 0.05);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
@@ -119,7 +120,8 @@ aside {
   }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: #222222;
+    font-weight: bold;
   }
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
@@ -155,7 +157,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('eatifyheader.jpg');
+  background-image: url('../eatifyheader.jpg');
   text-align: center;
   color: white;
 }
@@ -415,21 +417,26 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 .boxed {
-  background: rgba(0,0,0,0.7);
-  max-width: 800px;
+  background: rgba(0,0,0,0.8);
+  max-width: 700px;
   margin: auto;
   height: 400px;
   margin-top: 30px;
   }
+  @media (max-width: 768px) {
+  .boxed {
+    max-width: 400px;
+    max-height: 350px; 
+    }
+  }
 .headingtext {
 margin-top: -15px;
 margin-bottom: 80px;
-font-weight: bold;
 font-size: 25px;
 }
 /*! Zip Code Entry Box */
 .subscribe {
-	width : 40% !important ;
+	width : 60% !important ;
 	margin : 0 auto !important ;
 }
 .email_input {
@@ -442,15 +449,14 @@ font-size: 25px;
 .email_submit {
 	border : #ddd solid 2px;
 	border-radius : 5px;
-	padding : 15px 22px;
-	background : none;
+	padding : 14px 12px 9px 12px;
+	background : #39b54a;
 }
-.email_submit:hover {
-	opacity: 0.9;
-  background-color: #39b54a;
+@media (max-width: 768px) {
+  .email_submit {
+    padding : 8px 12px 7px 12px;
+    }
   }
-#submitarrow{
-}
 .downarrow {
  font-size: 50px;
 }
@@ -514,6 +520,14 @@ border-color: white;
 padding-left: 40px;
 font-weight: bold;
 }
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 12px;
+  }
+  .navbar-brand:hover {
+  opacity: .3;
+  }
+ } 
 #cheficon {
 max-height:200px;
 max-width: 20px;
@@ -555,11 +569,11 @@ color: rgba(0,0,0)
     bottom: 0;
 }
 .testimonial .pic{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 35px;
 }
 .testimonial .pic img{
     width: 100%;
@@ -644,3 +658,18 @@ color: white;
 margin-top: -50px;
 margin-bottom: 20px;
 }
+#primaryone {
+margin-top: -15px;
+margin-bottom: 45px;
+}
+#mc-email {
+background: white;
+border: 3px;
+border-color: #222222;
+font-size: 20px;
+}
+@media (max-width: 768px) {
+  #mc-email {
+    font-size: 14px;
+    }
+  }
