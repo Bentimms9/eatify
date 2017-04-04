@@ -209,7 +209,7 @@ header .header-content .header-content-inner p {
   }
 }
 .section-heading {
-  margin-top: 0;
+  margin-top: -40px;
 }
 .service-box {
   max-width: 400px;
@@ -480,6 +480,9 @@ width:40%
 #services {
 background-color: #F05F40;
 }
+#services2 {
+background-color: #222222;
+}
 .section-heading {
 color: white;
 }
@@ -530,7 +533,7 @@ padding: 50px 0px 0px 0px;
 color: rgba(0,0,0)
 }
 .testimonial{
-    border-left: 3px solid #6ab33e;
+    border-left: 3px solid #39b54a;
     padding: 100px 0 100px 275px;
     position: relative
 }
@@ -539,16 +542,16 @@ color: rgba(0,0,0)
     content: "";
     width: 320px;
     height: 55px;
-    border-right: 3px solid #6ab33e;
+    border-right: 3px solid #39b54a;
     position: absolute;
     left: 0;
 }
 .testimonial:before{
-    border-top: 3px solid #6ab33e;
+    border-top: 3px solid #39b54a;
     top: 0;
 }
 .testimonial:after{
-    border-bottom: 3px solid #6ab33e;
+    border-bottom: 3px solid #39b54a;
     bottom: 0;
 }
 .testimonial .pic{
@@ -580,14 +583,14 @@ color: rgba(0,0,0)
 .testimonial .testimonial-title{
     font-size: 22px;
     font-weight:800;
-    color: #22272c;
+    color: white;
     text-transform: capitalize;
 }
 .testimonial .post{
     display: block;
     font-size: 15px;
     font-weight: 700;
-    color :#6ab33e;
+    color :#39b54a;
     margin-top: 10px;
 }
 .owl-theme .owl-controls{
@@ -595,7 +598,7 @@ color: rgba(0,0,0)
     margin-top: 30px;
 }
 .owl-theme .owl-controls .owl-buttons div{
-    background: #6ab33e;
+    background: #39b54a;
     border-radius: 0;
     opacity: 1;
     padding: 5px 10px;
@@ -634,4 +637,10 @@ color: rgba(0,0,0)
     .testimonial .description:before{
         content: "";
     }
+}
+.section-heading-testimonials{
+text-align: center;
+color: white;
+margin-top: -50px;
+margin-bottom: 20px;
 }
