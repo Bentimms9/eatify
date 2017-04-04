@@ -9,7 +9,7 @@ body {
   width: 100%;
 }
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Avenir, 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
   border-color: #39b54a;
@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Avenir, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 p {
   font-size: 16px;
@@ -65,14 +65,14 @@ aside {
   background-color: white;
   border: none;
   border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Avenir, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: #F05F40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Avenir, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -90,7 +90,7 @@ aside {
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 20px;
   color: #222222;
 }
 .navbar-default .nav > li > a:hover,
@@ -157,7 +157,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../eatifyheader.jpg');
+  background-image: url('eatifyheader.jpg');
   text-align: center;
   color: white;
 }
@@ -254,7 +254,7 @@ header .header-content .header-content-inner p {
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Avenir, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   padding: 0 15px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -276,7 +276,7 @@ header .header-content .header-content-inner p {
     font-size: 16px;
   }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 22px;
+    font-size: 44px;
   }
 }
 .call-to-action h2 {
@@ -386,7 +386,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: white;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Avenir, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;
   border-radius: 300px;
   font-weight: 700;
@@ -439,21 +439,28 @@ font-size: 25px;
 	width : 60% !important ;
 	margin : 0 auto !important ;
 }
-.email_input {
-	padding : 15px;
-	border : #ddd solid 2px;
+.email-input {
+  padding : 15px;
+  border : #ddd solid 2px;
   border-radius: 5px;
-	background : none;
-  color: white;
+  background : none;
+  color: black;
 }
-.email_submit {
+.zip-code-input {
+  padding : 15px;
+  border : #ddd solid 2px;
+  border-radius: 5px;
+  background : none;
+  color: black;
+}
+.email-submit {
 	border : #ddd solid 2px;
 	border-radius : 5px;
 	padding : 14px 12px 9px 12px;
 	background : #39b54a;
 }
 @media (max-width: 768px) {
-  .email_submit {
+  .email-submit {
     padding : 8px 12px 7px 12px;
     }
   }
@@ -663,13 +670,22 @@ margin-top: -15px;
 margin-bottom: 45px;
 }
 #mc-email {
-background: white;
-border: 3px;
-border-color: #222222;
-font-size: 20px;
+  background: white;
+  border: 3px;
+  border-color: #222222;
+  font-size: 20px;
+}
+#mc-zip-code {
+  background: white;
+  border: 3px;
+  border-color: #222222;
+  font-size: 20px;
 }
 @media (max-width: 768px) {
   #mc-email {
     font-size: 14px;
-    }
+  }
+  #mc-zip-code {
+    font-size: 14px;
+  }
   }

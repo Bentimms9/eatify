@@ -10,12 +10,12 @@
     <meta name="author" content="">
 
     <title>Eatify</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
 
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
@@ -50,7 +50,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll"href="https://app.eatify.io/sign_in" target="_blank"> <object id="cheficon" data="../cheftwo.svg" type="image/svg+xml"></object>Add Your Recipes</a>
+                <a class="navbar-brand page-scroll" href="http://eatify.io/addrecipes/" target="_blank"> <object id="cheficon" data="cheftwo.svg" type="image/svg+xml"></object>Add Your Recipes</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,7 +60,7 @@
                         <a class="page-scroll" href="#services">How it works</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="https://app.eatify.io/sign_in">Login</a>
+                        <a class="page-scroll" href="https://app.eatify.io/sign_in">Sign In</a>
                     </li>
                 </ul>
             </div>
@@ -73,13 +73,13 @@
         <div class="header-content">
             <div class="header-content-inner">
               <div class="boxed">
-                <h1 id="homeheading"><img class="headerimage" src="../Eatifylogo.png" class="img-responsive" alt="Eatify"></h1>
+                <h1 id="homeheading"><img class="headerimage" src="Eatifylogo.png" class="img-responsive" alt="Eatify"></h1>
                 <hr id="primaryone">
                 <h3 class="headingtext">Recipe Ingredients Delivered Right To Your Door!</h3>
                 <br>
-                        <form id="mc-form">
-									<input class="email_input subscribe" id="mc-email" type="email" placeholder="Enter Zip Code">
-									<button class="email_submit" type="submit"><img src="../ArrowRight.png"></button>
+                        <form id="mc-form" action="https://app.eatify.io/discover" method="get">
+                            <input class="zip-code-input subscribe" name="zip_code" id="mc-zip-code" type="zip-code" placeholder="Enter Zip Code">
+									<button class="email-submit" type="submit"><img src="ArrowRight.svg" width="26" height="26"></button>
 						</form>
               </div>
             </div>
@@ -99,21 +99,21 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
-                        <object id="plateicon" data="../restaurant.svg" type="image/svg+xml"></object>
+                        <object id="plateicon" data="restaurant.svg" type="image/svg+xml"></object>
                         <h3 class="section2title">Discover Recipes</h3>
                         <p class="text-muted">Filter by preferences such as diet, ingredient, or cusine.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
-                        <object id="grocerycarticon" data="../Grocerycart.svg" type="image/svg+xml"></object>
+                        <object id="grocerycarticon" data="Grocerycart.svg" type="image/svg+xml"></object>
                         <h3 class="section2title">Order</h3>
                         <p class="text-muted">Add recipes to your cart. Choose deliver time and date. Checkout.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
-                        <object id="dooricon" data="../Door.svg" type="image/svg+xml"></object>
+                        <object id="dooricon" data="Door.svg" type="image/svg+xml"></object>
                         <h3 class="section2title">Receive Groceries</h3>
                         <p class="text-muted">A text message will let you know when your groceries are at your door.</p>
                     </div>
@@ -125,7 +125,7 @@
     <aside class="bg-dark" id="portfolio">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2>Our Most Popular Food Categories</h2>
+                <h2>Popular Categories</h2>
                 <hr/>
             </div>
         </div>
@@ -133,89 +133,83 @@
 
     <section class="no-padding">
         <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
+            <div class="row no-gutter popup-gallery bg-dark">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="https://app.eatify.io/discovery"target= "_blank" class="portfolio-box">
-                        <img src="../paleoavocadothumbnail.jpg" class="img-responsive" alt=""> 
+                    <a href="https://app.eatify.io/meals/discover?q=Paleo"target= "_blank" class="portfolio-box">
+                        <img src="meals/paleo.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    CLICK TO VIEW
                                 </div>
                                 <div class="project-name">
-                                    PALEO MEALS
+                                    PALEO
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="https://app.eatify.io/discovery"target= "_blank" class="portfolio-box">
-                        <img src="../lowcarbpancakes.jpg" class="img-responsive" alt="">
+                    <a href="https://app.eatify.io/meals/discover?q=dessert"target= "_blank" class="portfolio-box">
+                        <img src="meals/dessert.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    CLICK TO VIEW
                                 </div>
                                 <div class="project-name">
-                                    VEGAN MEALS
+                                    DESSERT
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="https://app.eatify.io/discovery"target= "_blank" class="portfolio-box">
-                        <img src="chickennoodlesoup.jpg" class="img-responsive" alt="">
+                    <a href="https://app.eatify.io/meals/discover?q=Vegetarian"target= "_blank" class="portfolio-box">
+                        <img src="meals/vegetarian.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    CLICK TO VIEW
                                 </div>
                                 <div class="project-name">
-                                    VEGETARIAN MEALS
+                                    VEGETARIAN
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="https://app.eatify.io/discovery"target= "_blank" class="portfolio-box">
-                        <img src="veganapplemuffins.jpg" class="img-responsive" alt="">
+                    <a href="https://app.eatify.io/meals/discover?q=Whole+30"target= "_blank" class="portfolio-box">
+                        <img src="meals/whole_30.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    CLICK TO VIEW
                                 </div>
                                 <div class="project-name">
-                                    WHOLE 30 MEALS
+                                    WHOLE 30
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="https://app.eatify.io/discovery"target= "_blank" class="portfolio-box">
-                        <img src="samonrice.jpg" class="img-responsive" alt="">
+                    <a href="https://app.eatify.io/meals/discover?q=Low+Carb"target= "_blank" class="portfolio-box">
+                        <img src="meals/low_carb.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    CLICK TO VIEW
                                 </div>
                                 <div class="project-name">
-                                    LOW CARB MEALS
+                                    LOW CARB
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="https://app.eatify.io/discovery"target= "_blank" class="portfolio-box">
-                        <img src="baconwrappedavocado.jpg" class="img-responsive" alt="">
+                    <a href="https://app.eatify.io/discovery?q=complete+meal+%28main+%2B+sides+in+one+recipe%29"target= "_blank" class="portfolio-box">
+                        <img src="meals/complete_meal.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    CLICK TO VIEW
                                 </div>
                                 <div class="project-name">
                                     COMPLETE MEALS
@@ -236,28 +230,28 @@
             <div id="testimonial-slider" class="owl-carousel">
                 <div class="testimonial">
                     <div class="pic">
-                        <img src="images/img-1.jpg" alt="">
+                        <img src="josh.jpg" alt="">
                     </div>
                     <div class="testimonial-content">
                         <p class="description">
                             Between work, the gym, and friends, I have little time to dedicate to my nutrition, but it’s still important to me. It now takes me seconds to find healthy meals to cook for the week – meals that match my lifestyle. Plus, getting the ingredients delivered straight to my door is awesome – couldn’t be easier!
                         </p>
                         <h3 class="testimonial-title">Josh C.
-                            <small class="post">Nutritionist</small>
+                            <small class="post">San Francisco, CA</small>
                         </h3>
                     </div>
                 </div>
  
                 <div class="testimonial">
                     <div class="pic">
-                        <img src="../LisaTestimonial.JPG" alt="Meal Kits">
+                        <img src="lisa.jpg" alt="Meal Kits">
                     </div>
                     <div class="testimonial-content">
                         <p class="description">
                             I rarely have the time to figure out what to make for dinner so I found myself eating out a lot or getting restaurant delivery, which cost a ton and isn’t healthy. I love how I can now just flip through pictures of meals from my favorite Instagrammer, pick the ones that look good, and then get a shoppable grocery list!
                         </p>
                         <h3 class="testimonial-title">Lisa Marie
-                            <small class="post">Dietition</small>
+                            <small class="post">San Francisco, CA</small>
                         </h3>
                     </div>
                 </div>
@@ -266,7 +260,16 @@
     </div>
 </div>
     </section>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+        ga('create', 'UA-90597297-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 
     <!-- jQuery -->
     <script src="eatifyjquery.js"></script>
