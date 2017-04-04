@@ -64,7 +64,7 @@ $(document).ready(function(){
         singleItem:true,
         transitionStyle:"goDown",
         navigationText:["",""],
-        autoPlay:false
+        autoPlay:true
     });
 });
     // Initialize and Configure Magnific Popup Lightbox Plugin
